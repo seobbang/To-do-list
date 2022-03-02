@@ -1,0 +1,140 @@
+.hidden {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 63px;
+    margin-top: 0px;
+    margin-bottom: 28px;
+}
+
+a {
+    padding-bottom : 20px;
+}
+
+#todo {
+    text-align: center;
+}
+
+ul{
+    overflow: auto;
+    height: 415px;
+}
+
+#todo-form input {
+    border-top:0;
+    border-right:0;
+    border-left:0;
+    margin:20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    height: 25px;
+    width: 295px;
+    font-size: 20px;
+    background-color: #FFD0CD;
+}
+
+input:focus {
+    outline:none;
+}
+
+svg {
+    position: relative;
+    top:6px;
+    left:1px;
+    margin-left: 8px;
+    fill:rgb(94, 90, 90);
+}
+
+#enterButton {
+    text-align:left;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: 	#FFF0F5;
+    border-radius: 12px;
+
+    box-shadow: 1.5px 1.5px 1.5px black;
+    cursor: pointer;
+
+    transition-duration: 0.3s; /*클릭 시 동적으로 0.3초동안 구현되도록*/
+}
+
+button:active {
+    margin-left: 5px;
+    margin-top: 5px; /*눌렀을 시 살짝 이동하는 효과*/
+
+    box-shadow: none;
+}
+
+#todo-list {
+    padding-left: 32px;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 25px;
+    display:grid;
+    grid-template-columns: 40px 258px 100px;
+}
+
+#todo-list input {
+    background-color:#FFD0CD;
+    height:25px;
+    width:240px;
+    border : 1.6px dashed #646464;
+}
+
+#todo-list span:first-child{
+    padding-right: 6px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+#todo-list button{
+    height:27px;
+}
+
+#todo-list span:last-child button{
+    margin-left: 5px;
+}
+#clock {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 20%;
+    @media(max-width:910px) {
+        margin-right:10px;
+    }
+    
+}
+
+#date {
+    text-align: center;
+    font-size : 18px;
+    margin-bottom: 10px;
+}
+
+#box {
+    width : 450px;
+    height: 500px;
+    border: 2px solid black;
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#FFD0CD;
+}
+
+#checkButton {
+    width:30px;
+    height:24px;
+    text-align: center;
+}
+
+.done {
+    text-decoration: line-through;
+}
